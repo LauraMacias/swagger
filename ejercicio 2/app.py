@@ -21,4 +21,3 @@ def login():
    else:
       return 'welcome to a GET'
  
-app.run(host='localhost', port=99)

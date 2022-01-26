@@ -26,10 +26,26 @@ Then open a url on http://localhost:99/form
 
 # Exercise 2
 
-On this exercise the only goal is to create your first API where you will invoke different services internally
+On this exercise the only goal is to create your first API around a docker file
 
->pip install -r requirements.txt
+>docker build --tag python-docker .
 
->python main.py
+>docker run -p 5000:5000 python-docker
 
-Then open a url on http://localhost:99/form
+Then open a url on http://localhost:5000/form
+
+# Exercise 3
+
+Let's explore swagger together
+
+>docker build -t swagger_server .
+
+>docker run -p 8080:8080 swagger_server
+
+Then open a url on http://localhost:8080/v2/ui/#/store
+
+# Exercise 4
+
+Now we both work together
+
+Let's play Blackjack!!!
